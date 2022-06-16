@@ -1,0 +1,15 @@
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+  }
+
+body{
+    font-family:Arial,Helvetica, sans-self;
+}
+
+h1{
+    border-bottom: 5px solid #375e97;
+}
+p{
+    border: 5px solid blue;
+    background: rgb(173, 173, 173)
+}
