@@ -8,9 +8,9 @@ var ha = false;
 // 予想を4回実行する
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 hantei();
-hantei();
-hantei();
-hantei();
+//hantei();
+//hantei();
+//hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
@@ -19,27 +19,36 @@ function hantei() {
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
     kaisu++;
-    console.log(kaisu+"回目の予想: "+yoso);
+    let kai = kaisu;
+    let yo =yoso;
+    let s = document.querySelector('span#kaisu');
+    s.textContent = kai;
+    s = document.querySelector('span#yoso');
+    s.textContent = yoso;
+    let result = "";
+    s = document.querySelector('span#result');
     if(ha){
-        console.log("答えは "+kotae+" でした．すでにゲームは終わっています");
-        return;
+        result="答えは "+kotae+" でした．すでにゲームは終わっています";
+        
+   
     }
-    if(yoso === kotae){
-        console.log("正解です．おめでとう!");
+    else if(yoso === kotae){
+        result="正解です．おめでとう!";
         ha= true;
+        
     } else {
         if(kaisu === 3){
-            console.log("まちがい．残念でした答えは "+kotae+" です");
-            return;
+            result="まちがい．残念でした答えは "+kotae+" です";
+            ha=true;
+       
         }
-        if(kaisu >= 4){
-            console.log("答えは "+kotae+" でした．すでにゲームは終わっています");
-            return;
-        }
-        if (yoso < kotae){
-            console.log("まちがい．答えはもっと大きいですよ");
+        else if (yoso < kotae){
+            result="まちがい．答えはもっと大きいですよ";
+            
         } else {
-            console.log("まちがい．答えはもっと小さいですよ");
+            result="まちがい．答えはもっと小さいですよ";
+            
         }
     }
+    s.textContent = result;
 }
