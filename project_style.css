@@ -1,0 +1,145 @@
+.map-box {
+    position: relative;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 45%;
+    left: 84.5%;
+}
+
+.map2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 40%;
+    left: 77%;
+}
+
+.map3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 51%;
+    left: 53%;
+}
+
+.map4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+.map5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 79%;
+    left: 52%;
+}
+
+.map6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 62%;
+    left: 74%;
+}
+
+.map7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 80%;
+    left: 87%;
+}
+
+.map8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 34%;
+    left: 44%;
+}
+
+.map9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 37%;
+    left: 45%;
+}
+
+.map10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 73%;
+    left: 34%;
+}
+
+.map11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 40%;
+    left: 26%;
+}
+
+.map12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 44%;
+    left: 13%;
+}
+
+img.button:hover{
+	opacity:0.5;
+	cursor: pointer;
+}
+ 
+img.button:active{
+	position: relative;
+	top: 3px;
+}
