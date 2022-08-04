@@ -5,6 +5,7 @@
     <title>Projects</title>
     <link rel="stylesheet" href="project_style.css">
     <script src="weather.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
   </head>
 
   <body>
@@ -14,65 +15,91 @@
       <div class="map-box">
           <img src="Word_map.jpg"  width="100%" height="100%">
           <div class="map">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">東京 （日本）</div>
           </div>
 
           <div class="map2">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin2"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">北京 （中華人民共和国）</div>
           </div>
 
           <div class="map3">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin3"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">カイロ （エジプト）</div>
           </div>
 
           <div class="map4">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin4"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">モスクワ （ロシア）</div>
           </div>
 
           <div class="map5">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin5"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">ヨハネスブルク （南アフリカ）</div>
           </div>
 
           <div class="map6">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin6"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">シンガポール</div>
           </div>
 
           <div class="map7">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin7"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">シドニー （オーストラリア）</div>
           </div>
 
           <div class="map8">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin8"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">ロンドン （イギリス）</div>
           </div>
 
           <div class="map9">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin9"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">パリ （フランス）</div>
           </div>
 
           <div class="map10">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin10"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">リオデジャネイロ （ブラジル）</div>
           </div>
 
           <div class="map11">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin11"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">ニューヨーク （アメリカ合衆国）</div>
           </div>
 
           <div class="map12">
-            <a href="#"><img src="pin.png"  width="30" height="30" class="button"></a>
+            <a id="pin12"><img src="pin.png"  width="30" height="30" class="button"></a>
             <div class="description5">ロサンゼルス （アメリカ合衆国）</div>
           </div>
 
       </div>
+
+      <table border="1">
+        <tr>
+          <th>都市名</th>
+          <th>緯度</th>
+          <th>経度</th>
+          <th>天気</th>
+          <th>最低気温</th>
+          <th>最高気温</th>
+          <th>湿度</th>
+          <th>風速</th>
+          <th>風向</th>
+        </tr>
+        <tr>
+          <td><span id="name">　</span></td>
+          <td><span id="ido">　</span></td>
+          <td><span id="keido">　</span></td>
+          <td><span id="whether">　</span></td>
+          <td><span id="min">　</span></td>
+          <td><span id="max">　</span></td>
+          <td><span id="humidity">　</span></td>
+          <td><span id="speed">　</span></td>
+          <td><span id="diretion">　</span></td>
+        </tr>
+      </table>
+
   </body>
 </html>
